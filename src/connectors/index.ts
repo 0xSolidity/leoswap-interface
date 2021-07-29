@@ -11,11 +11,11 @@ import { Web3Provider } from '@ethersproject/providers'
 // import { BscConnector } from '@binance-chain/bsc-connector'
 
 const RPC = {
-    [ChainId.MAINNET]: 'https://main-light.eth.linkpool.io'
+    [ChainId.KCC]: 'https://rpc-mainnet.kcc.network'
 }
 
 export const network = new NetworkConnector({
-    defaultChainId: 1,
+    defaultChainId: 321,
     urls: RPC
 })
 
@@ -26,14 +26,14 @@ export function getNetworkLibrary(): Web3Provider {
 
 export const injected = new InjectedConnector({
     supportedChainIds: [
-        1 // mainnet
+        321 // kcc
     ]
 })
 
 // mainnet only
 export const walletconnect = new WalletConnectConnector({
     rpc: {
-        [ChainId.MAINNET]: RPC[ChainId.MAINNET]
+        [ChainId.KCC]: RPC[ChainId.KCC]
     },
     bridge: 'https://bridge.walletconnect.org',
     qrcode: true,
@@ -43,7 +43,7 @@ export const walletconnect = new WalletConnectConnector({
 // mainnet only
 export const lattice = new LatticeConnector({
     chainId: 1,
-    url: RPC[ChainId.MAINNET],
+    url: RPC[ChainId.KCC],
     appName: 'LeoSwap'
 })
 
@@ -61,7 +61,7 @@ export const portis = new PortisConnector({
 
 // mainnet only
 export const walletlink = new WalletLinkConnector({
-    url: RPC[ChainId.MAINNET],
+    url: RPC[ChainId.KCC],
     appName: 'LeoSwap',
     appLogoUrl: 'https://raw.githubusercontent.com/sushiswap/art/master/sushi/logo-256x256.png'
 })
