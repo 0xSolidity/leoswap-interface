@@ -264,7 +264,7 @@ module.exports = {
                         border: 'double 2px transparent',
                         borderRadius: '0.375rem',
                         backgroundImage:
-                            'linear-gradient( to right, #ffce2b, #ff930d ), linear-gradient(to right, #ffce2b, #ff930d) !important',
+                            'linear-gradient( to right, #39DDA6, #06CB89 ), linear-gradient(to right, #39DDA6, #06CB89) !important',
                         backgroundOrigin: 'border-box',
                         backgroundClip: 'padding-box, border-box',
                         color: 'black !important'
@@ -283,7 +283,7 @@ module.exports = {
                         border: 'double 2px transparent',
                         borderRadius: '0.375rem',
                         backgroundImage:
-                            '        linear-gradient( to right, #222115, #222115 ), linear-gradient(to right, #ffce2b, #ff930d) !important',
+                            '        linear-gradient( to right, #222115, #222115 ), linear-gradient(to right, #39DDA6, #06CB89) !important',
                         backgroundOrigin: 'border-box',
                         backgroundClip: 'padding-box, border-box',
                         color: 'white !important'
