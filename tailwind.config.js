@@ -46,7 +46,7 @@ module.exports = {
             'light-brown': '#FEC464',
             'light-yellow': '#FFD166',
             'cyan-blue': '#0993EC',
-            pink: '#FFCE2B',
+            pink: '#39DDA6',
 
             'dark-pink': '#252218',
             'dark-blue': '#2a250f',
@@ -244,7 +244,7 @@ module.exports = {
         plugin(function({ addUtilities }) {
             addUtilities({
                 '.border-yellow': {
-                    border: '2px solid #FFCE2B'
+                    border: '2px solid #39DDA6'
                 }
             })
         }),
