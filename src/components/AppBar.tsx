@@ -90,7 +90,7 @@ function AppBar(): JSX.Element {
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add LEO to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add KUNI to your Metamask wallet`)}>
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -105,7 +105,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'LEO',
+                                                                        symbol: 'KUNI',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://raw.githubusercontent.com/KukuSwap-KCC/icons/main/token/kuku.png'
@@ -125,7 +125,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added LEO to MetaMask'
+                                                                                    'Successfully added KUNI to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
