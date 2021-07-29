@@ -2,7 +2,7 @@ import { ChainId, Currency } from '@kukuswap/sdk'
 import React, { useEffect, useState } from 'react'
 import { useLocation } from 'react-router-dom'
 // import Logo from '../assets/images/logo.png'
-import Logo from '../assets/images/kukuswapLogogif1.gif'
+import Logo from '../assets/images/leoswaplogo.png'
 import { useActiveWeb3React } from '../hooks/useActiveWeb3React'
 import { useETHBalances } from '../state/wallet/hooks'
 import { ReactComponent as Burger } from '../assets/images/burger.svg'
@@ -90,7 +90,7 @@ function AppBar(): JSX.Element {
                                             library &&
                                             library.provider.isMetaMask && (
                                                 <>
-                                                    <QuestionHelper text={i18n._(t`Add Kuku to your Metamask wallet`)}>
+                                                    <QuestionHelper text={i18n._(t`Add LEO to your Metamask wallet`)}>
                                                         <div
                                                             className="hidden sm:inline-block rounded-md bg-dark-900 hover:bg-dark-800 cursor-pointer"
                                                             onClick={() => {
@@ -105,7 +105,7 @@ function AppBar(): JSX.Element {
                                                                     type: 'ERC20',
                                                                     options: {
                                                                         address: address,
-                                                                        symbol: 'KUKU',
+                                                                        symbol: 'LEO',
                                                                         decimals: 18,
                                                                         image:
                                                                             'https://raw.githubusercontent.com/KukuSwap-KCC/icons/main/token/kuku.png'
@@ -125,7 +125,7 @@ function AppBar(): JSX.Element {
                                                                         .then(success => {
                                                                             if (success) {
                                                                                 console.log(
-                                                                                    'Successfully added KUKU to MetaMask'
+                                                                                    'Successfully added LEO to MetaMask'
                                                                                 )
                                                                             } else {
                                                                                 throw new Error('Something went wrong.')
